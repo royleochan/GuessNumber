@@ -7,7 +7,7 @@ import Colors from '../constants/colors'
 const Header = props => {
     return (
         <View style = {styles.header}>
-            <Text styles = {styles.headerTitle}>{props.title}</Text>
+            <Text style = {styles.headerTitle}>{props.title}</Text>
         </View>
     );
 };
@@ -19,11 +19,11 @@ const styles = StyleSheet.create({
       paddingTop: 36,
       backgroundColor: Colors.primary,
       alignItems: 'center',
-      justifyContent: 'center'
-    },
+      justifyContent: 'center'    },
     headerTitle: {
       color: 'black',
-      fontSize: 18
+      fontSize: 18,
+      fontFamily: 'open-sans-bold'
     }
 });
 
