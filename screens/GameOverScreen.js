@@ -6,14 +6,14 @@ import DefaultStyles from '../constants/defaultStyles'
 const GameOverScreen = (props) => {
     return (
         <View style = {styles.screen}>
-            <Text style = {DefaultStyles.bodyText}>The Game is OVER, the number is {props.userChoice}</Text>
+            <Text style = {DefaultStyles.bodyText}>The Game is <Text style = {styles.highlight}>OVER</Text>, the number is <Text style = {styles.highlight}>{props.userChoice}</Text></Text>
             <View style = {styles.imageContainer}>
                 <Image 
                     source = {require('../assets/original.png')} 
                     style = {styles.image}
                     resizeMode = "cover"/>
             </View>
-            <Text>Number of rounds: {props.numRounds}</Text>
+            <Text style = {DefaultStyles.bodyText}>Number of rounds: <Text style = {styles.highlight}>{props.numRounds}</Text></Text>
             <Button title = "New Game" onPress = {props.reset}/>
         </View>
     )
@@ -39,5 +39,9 @@ const styles = StyleSheet.create({
         height: 300,
         overflow: 'hidden',
         marginVertical: 30
+    },
+    highlight: {
+        color: 'blue',
+        marginVertical: 20
     }
 })
