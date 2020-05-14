@@ -7,6 +7,7 @@ import Input from '../components/Input'
 import NumberContainer from '../components/NumberContainer'
 
 const StartGameScreen = (props) => {
+    // @refresh reset
     const [enteredValue, setEnteredValue] = useState("");
     const [confirmed, setConfirmed] = useState(false);
     const [selectedNumber, setSelectedNumber] = useState();
