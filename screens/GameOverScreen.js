@@ -6,7 +6,7 @@ import {
   Button,
   Image,
   Dimensions,
-  ScrollView
+  ScrollView,
 } from "react-native";
 
 import DefaultStyles from "../constants/defaultStyles";
@@ -44,20 +44,20 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    paddingVertical: 10
+    paddingVertical: 10,
   },
   image: {
     width: "100%",
     height: "100%",
   },
   imageContainer: {
-    borderRadius: Dimensions.get('window').width * 0.7 / 2,
+    borderRadius: (Dimensions.get("window").width * 0.7) / 2,
     borderWidth: 3,
     borderColor: "black",
-    width: Dimensions.get('window').width * 0.7,
-    height: Dimensions.get('window').width * 0.7,
+    width: Dimensions.get("window").width * 0.7,
+    height: Dimensions.get("window").width * 0.7,
     overflow: "hidden",
-    marginVertical: Dimensions.get('window').height / 30,
+    marginVertical: Dimensions.get("window").height / 30,
   },
   highlight: {
     color: "blue",

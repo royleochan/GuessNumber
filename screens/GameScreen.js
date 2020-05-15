@@ -36,7 +36,7 @@ const renderListItem = (value, numOfRound) => {
 };
 
 const GameScreen = (props) => {
-  ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.PORTRAIT);
+  // ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.PORTRAIT);
   // @refresh reset
   const initialGuess = generateRandomBetween(1, 100, props.userChoice);
 
