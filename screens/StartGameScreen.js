@@ -7,6 +7,7 @@ import {
   TouchableWithoutFeedback,
   Keyboard,
   Alert,
+  Dimensions,
 } from "react-native";
 
 import Card from "../components/Card";
@@ -84,6 +85,7 @@ const StartGameScreen = (props) => {
                 title="Reset"
                 onPress={resetInputHandler}
                 color={Colors.accent}
+                style={styles.button}
               />
             </View>
             <View style={styles.confirm}>
@@ -91,6 +93,7 @@ const StartGameScreen = (props) => {
                 title="Confirm"
                 onPress={confirmInputHandler}
                 color={Colors.primary}
+                style={styles.button}
               />
             </View>
           </View>
@@ -113,8 +116,8 @@ const styles = StyleSheet.create({
     fontFamily: "open-sans-bold",
   },
   inputContainer: {
-    width: '80%',
-    maxWidth: '95%',
+    width: "80%",
+    maxWidth: "95%",
     minWidth: 300,
     alignItems: "center",
   },
@@ -123,6 +126,9 @@ const styles = StyleSheet.create({
     width: "100%",
     justifyContent: "space-between",
     paddingHorizontal: 15,
+  },
+  button: {
+    width: Dimensions.get('window').width / 4
   },
   reset: {
     width: 100,

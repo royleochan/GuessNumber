@@ -10,7 +10,7 @@ const MainButton = (props) => {
         <Text style={styles.buttonText}>{props.children}</Text>
       </View>
     </TouchableOpacity>
-  );
+  ); 
 };
 
 export default MainButton;
